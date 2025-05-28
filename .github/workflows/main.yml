@@ -27,8 +27,8 @@ jobs:
         run: python csvtojson.py
       - name: Run unit tests
         run: |
-          pytest calculateTests.py
-          pytest test_data.py
+          pytest calculateTests.py --verbose
+          pytest test_data.py --verbose
       - name: Copy files to dist
         run: |
           mkdir dist
