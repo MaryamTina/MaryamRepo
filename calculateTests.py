@@ -26,8 +26,6 @@ class TestBeer(unittest.TestCase):
         c = canIBuyBeer(age, loc)
         self.assertFalse(c)
 
-    def test_always_fails(self):
-        self.assertTrue(False, "This test is designed to fail")
-
+   
 if __name__ == '__main__':
     unittest.main()
