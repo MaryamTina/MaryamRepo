@@ -22,3 +22,6 @@ This repository (`MaryamTina/MaryamRepo`) hosts a web application that showcases
 1. Clone the repository:
    ```bash
    git clone https://github.com/MaryamTina/MaryamRepo
+
+## Screenshots
+![Pipeline Success](docs/actions_screenshot.png)
