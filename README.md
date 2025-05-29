@@ -12,6 +12,12 @@ This repository (`MaryamTina/MaryamRepo`) hosts a web application that showcases
 - **CI/CD Pipeline**: Automates testing and deployment through `main.yml`, ensuring reliable updates to GitHub Pages.
 - **Unit Testing**: Validates data integrity with `calculateTests.py` (business logic) and `test_data.py` (CSV/JSON validation).
 
+## How It Works
+- `generate.py`: Produces `profiles1.csv` with 1000+ fake customer records.
+- `csvtojson.py`: Converts `profiles1.csv` to `data.json`.
+- `script.js`: Loads `data.json` and populates the table in `index.html`.
+- Pipeline automates testing and deployment to GitHub Pages.
+
 ## Setup Instructions
 1. Clone the repository:
    ```bash
