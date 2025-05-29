@@ -31,5 +31,13 @@ class TestData(unittest.TestCase):
             for record in data:
                 self.assertEqual(list(record.keys()), expected_keys, "JSON record missing properties")
 
+    def test_json_non_empty_fields(self):
+        with open('data.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            for record in data:
+                self.assertTrue(record["Givenname"], "Givenname should not be empty")
+                self.assertTrue(record["Surname"], "Surname should not be empty")
+                self.assertTrue(record["Birthday"], "Birthday should not be empty")
+
 if __name__ == '__main__':
     unittest.main()
