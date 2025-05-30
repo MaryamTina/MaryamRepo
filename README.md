@@ -1,6 +1,8 @@
 # Customer Data Display Project
 
 A web application for displaying customer data from a JSON file, integrated with a robust CI/CD pipeline using GitHub Actions. This project fulfills academic requirements for automated data processing, testing, and deployment.
+## Access the live site 
+[View the live site here] (https://maryamtina.github.io/MaryamRepo/ )
 
 ## Overview
 
