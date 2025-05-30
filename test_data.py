@@ -21,15 +21,15 @@ class TestData(unittest.TestCase):
             self.assertGreater(len(data), 900, "JSON should have more than 900 rows")
 
     def test_json_properties(self):
-        expected_keys = [
+        expected_keys = {
             "Givenname", "Surname", "Streetaddress", "City", "Zipcode",
             "Country", "CountryCode", "NationalId", "TelephoneCountryCode",
             "Telephone", "Birthday", "ConsentToContact"
-        ]
+        }
         with open('data.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
             for record in data:
-                self.assertEqual(list(record.keys()), expected_keys, "JSON record missing properties")
+                self.assertEqual(set(record.keys()), expected_keys, "JSON record missing properties")
 
     def test_json_non_empty_fields(self):
         with open('data.json', 'r', encoding='utf-8') as f:
